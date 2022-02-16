@@ -6,8 +6,8 @@ class Solution:
         left_tot = 0  
         ans= float('inf')
         for k in sorted(c):
-            n -= c[k]   
-            tot -= k*c[k] 
-            ans = min(ans, tot - n * k + left_tot)
-            left_tot += k * c[k] 
+            n-=c[k]   
+            tot-=k*c[k] 
+            ans=min(ans,tot-n*k+left_tot)
+            left_tot+=k*c[k] 
         return ans
